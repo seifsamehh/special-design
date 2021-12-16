@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Design</title>
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- start setting box -->
+    <section class="settings-box">
+        <div class="toggle-settings">
+            <i class="fas fa-cog setting"></i>
+        </div>
+        <div class="settings-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color= "#ff9800"></li>
+                    <li data-color= "#e91e63"></li>
+                    <li data-color= "#ffd700"></li>
+                    <li data-color= "#03a9f4"></li>
+                    <li  data-color= "#4caf50"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end setting box -->
+    <!-- start landing page -->
+    <header class="landing-page">
+        <div class="overlay"></div>
+        <div class="header-area">
+            <div class="logo"><span>S</span>pecial <span>D</span>esign</div>
+            <ul class="links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-align-justify fa-2x" onclick="appear()"></i>
+        </div>
+        <div class="intro-text">
+            <h1>We Are <span>Creative</span> Agency</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illum voluptatem magnam natus facilis quibusdam.</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff9800" fill-opacity="1" d="M0,320L80,309.3C160,299,320,277,480,234.7C640,192,800,128,960,122.7C1120,117,1280,171,1360,197.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    </header>
+    <!-- end landing page -->
+    <!-- start about us -->
+    <section class="about-us" id="about">
+        <div class="container">
+            <div class="info-box" data-move-y="200px">
+                <h2>About us</h2>
+                <p id="change">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ex dicta adipisci laboriosam distinctio deleniti veritatis alias, quis quasi maxime dolores, quas doloribus cum libero. Ut quos soluta facere impedit!</p>
+                <button id="click">Read More</button>
+            </div>
+            <div class="img-box" data-rotate-y="90deg">
+                <img src="/images/about-us.jpg" alt="About Us" id="img">
+            </div>
+        </div>
+    </section>
+    <!-- end about us -->
+    <!-- start skills -->
+    <section class="skills" data-move-y="200px" id="skills">
+        <div class="container">
+            <h2 class="header-1">Our Skills</h2>
+            <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                    <span id="fill-1"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span id="fill-2"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">JAVASCRIPT</div>
+                <div class="skill-progress">
+                    <span id="fill-3"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">SCSS</div>
+                <div class="skill-progress">
+                    <span id="fill-4"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">BOOTSTRAP</div>
+                <div class="skill-progress">
+                    <span id="fill-5"></span>
+                </div>
+            </div>
+        </div>
+        <button id="btn" class="filling">PROGRESS</button>
+    </section>
+    <!-- end skills -->
+    <!-- start gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="header-2">Our Gallery</h2>
+            <div class="images-box" data-move-y="100px">
+                <img src="/images/01.jpg" alt="project 1">
+                <img src="/images/02.jpg" alt="project 2">
+                <img src="/images/03.jpg" alt="project 3">
+                <img src="/images/04.jpg" alt="project 4">
+                <img src="/images/05.jpg" alt="project 5">
+                <img src="/images/06.png" alt="project 6">
+                <img src="/images/07.jpg" alt="project 7">
+                <img src="/images/08.jpg" alt="project 8">
+                <img src="/images/09.jpg" alt="project 9">
+                <img src="/images/10.jpg" alt="project 10">
+            </div>
+        </div>
+    </section>
+    <!-- end gallery -->
+    <!-- start timeline -->
+    <section class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2020</div>
+                <div class="left" data-move-x="-100px">
+                    <div class="content">
+                        <h3>Creative</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt voluptates necessitatibus nulla unde vitae. Porro illo, fugit cumque ut similique ab libero esse, suscipit dolor aliquam quis ad natus.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right" data-move-y="100px">
+                    <div class="content">
+                        <h3>Professional</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt voluptates necessitatibus nulla unde vitae. Porro illo, fugit cumque ut similique ab libero esse, suscipit dolor aliquam quis ad natus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end timeline -->
+    <!-- start features -->
+    <section class="features" id="features">
+        <h2 class="header-3">Our Features</h2>
+        <div class="container">
+            <div class="feat-box" data-move-x="-100px" data-move-y="-100px">
+                <img src="/images/Icon_01.png" alt="icon 1">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum, blanditiis itaque veritatis impedit, placeat sed architecto tempora officiis tenetur sapiente eveniet officia perferendis aut eaque animi vel ipsam maxime.</p>
+            </div>
+            <div class="feat-box">
+                <img src="/images/Icon_02.png" alt="icon 2">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum, blanditiis itaque veritatis impedit, placeat sed architecto tempora officiis tenetur sapiente eveniet officia perferendis aut eaque animi vel ipsam maxime.</p>
+            </div>
+            <div class="feat-box" data-move-x="100px" data-move-y="-100px">
+                <img src="/images/Icon_03.png" alt="icon 3">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum, blanditiis itaque veritatis impedit, placeat sed architecto tempora officiis tenetur sapiente eveniet officia perferendis aut eaque animi vel ipsam maxime.</p>
+            </div>
+            <div class="feat-box" data-move-y="100px">
+                <img src="/images/Icon_04.png" alt="icon 4">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum, blanditiis itaque veritatis impedit, placeat sed architecto tempora officiis tenetur sapiente eveniet officia perferendis aut eaque animi vel ipsam maxime.</p>
+            </div>
+            <div class="feat-box">
+                <img src="/images/Icon_05.png" alt="icon 5">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum, blanditiis itaque veritatis impedit, placeat sed architecto tempora officiis tenetur sapiente eveniet officia perferendis aut eaque animi vel ipsam maxime.</p>
+            </div>
+            <div class="feat-box" data-move-y="100px">
+                <img src="/images/Icon_06.png" alt="icon 6">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum, blanditiis itaque veritatis impedit, placeat sed architecto tempora officiis tenetur sapiente eveniet officia perferendis aut eaque animi vel ipsam maxime.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end features -->
+    <!-- start testimonial -->
+    <section class="testimonials">
+        <h2 class="header-4">Testimonials</h2>
+        <div class="container">
+            <div class="ts-box">
+                <p class="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, beatae.</p>
+                <div class="person-info">
+                    <img src="/images/avatar.png" alt="avatar 1">
+                    <h4>John Doe</h4>
+                    <p>CEO At Company</p>
+                </div>
+            </div>
+            <div class="ts-box spe">
+                <p class="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, beatae.</p>
+                <div class="person-info">
+                    <img src="/images/avatar.png" alt="avatar 2">
+                    <h4>John Doe</h4>
+                    <p>FRONT-END DEVELOPER</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p class="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, beatae.</p>
+                <div class="person-info">
+                    <img src="/images/avatar.png" alt="avatar 3">
+                    <h4>John Doe</h4>
+                    <p>Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end testimonial -->
+    <!-- start contact us -->
+    <section class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2 class="header-5">Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="username" required>
+                    <input type="number" placeholder="Your Phone" name="number" min="1" max="12">
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="SEND">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- end contact us -->
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <p>copyright&copy; 2021 Special Design</p>
+            <div class="btns">
+                <button class="btn-flip-down">
+                    <div class="front">By Seif Sameh</div>
+                    <div class="back">By Seif Sameh</div>
+                </button>
+            </div>
+            <a href="#"><i class="fas fa-sort-up"></i></a>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/js/jquery.smoove.js"></script>
+    <script>
+        $('.img-box').smoove({offset: '40%'});
+        $('.info-box').smoove({offset: '40%'});
+        $('.skills').smoove({offset: '40%'});
+        $('.images-box').smoove({offset: '40%'});
+        $('.left').smoove({offset: '40%'});
+        $('.right').smoove({offset: '40%'});
+        $('.feat-box').smoove({offset: '40%'});
+        $('.ts-box').smoove({offset: '40%'});
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
